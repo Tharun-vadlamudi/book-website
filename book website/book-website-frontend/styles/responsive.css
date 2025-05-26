@@ -1,0 +1,44 @@
+/* Mobile First Approach */
+
+/* Small devices (phones) */
+@media (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    
+    .search-bar {
+        width: 100%;
+    }
+    
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .book-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 993px) {
+    .book-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

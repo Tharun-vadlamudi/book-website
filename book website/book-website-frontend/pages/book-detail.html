@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details | BookVerse</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">BookVerse</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="books.html">Browse</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search books...">
+                <button>Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="book-detail">
+        <section class="book-main">
+            <div class="book-cover">
+                <img id="book-cover-img" src="" alt="Book Cover">
+            </div>
+            <div class="book-info">
+                <h1 id="book-title"></h1>
+                <h2 id="book-author"></h2>
+                <div class="rating" id="book-rating"></div>
+                <p class="price" id="book-price"></p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="wishlist">Add to Wishlist</button>
+            </div>
+        </section>
+
+        <section class="book-description">
+            <h3>Description</h3>
+            <p id="book-desc"></p>
+        </section>
+
+        <section class="reviews">
+            <h3>Reviews</h3>
+            <div class="reviews-list" id="reviews-container">
+                <!-- Reviews loaded dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 BookVerse. All rights reserved.</p>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/api.js"></script>
+    <script src="../scripts/book-detail.js"></script>
+</body>
+</html>

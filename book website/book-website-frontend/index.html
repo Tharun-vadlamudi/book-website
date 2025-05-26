@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookVerse - Discover Your Next Read</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">BookVerse</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/books.html">Browse</a></li>
+                <li><a href="pages/login.html">Login</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search books...">
+                <button>Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Discover Your Next Favorite Book</h1>
+            <p>Join our community of book lovers</p>
+            <a href="pages/books.html" class="cta-button">Browse Collection</a>
+        </section>
+
+        <section class="featured-books">
+            <h2>Featured This Week</h2>
+            <div class="book-grid" id="featured-books">
+                <!-- Dynamically loaded from API -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 BookVerse. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/api.js"></script>
+</body>
+</html>

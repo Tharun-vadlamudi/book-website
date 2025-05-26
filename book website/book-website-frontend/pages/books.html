@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Books | BookVerse</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">BookVerse</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="books.html" class="active">Browse</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search books..." id="search-input">
+                <button id="search-btn">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="books-main">
+        <section class="filters">
+            <h2>Filters</h2>
+            <div class="filter-options">
+                <select id="genre-filter">
+                    <option value="">All Genres</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                    <!-- More genres -->
+                </select>
+                
+                <select id="sort-by">
+                    <option value="title">Sort by Title</option>
+                    <option value="author">Sort by Author</option>
+                    <option value="rating">Sort by Rating</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="all-books">
+            <h2>All Books</h2>
+            <div class="book-grid" id="all-books">
+                <!-- Dynamically loaded -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 BookVerse. All rights reserved.</p>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/api.js"></script>
+    <script src="../scripts/books.js"></script>
+</body>
+</html>
